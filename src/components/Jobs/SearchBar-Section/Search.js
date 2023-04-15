@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Container, Col, Row } from "react-bootstrap";
-import bg from "../../assets/bg.jpeg";
+import bg from "../../assets/bg.jpg";
 import Form from "react-bootstrap/Form";
+import SectionImage from "./SectionImage";
 
 const Search = () => {
   return (
@@ -10,13 +11,15 @@ const Search = () => {
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         height: "500px",
+        position: "relative",
       }}
     >
       <div
         style={{
-          position: "relative",
+          position: "absolute",
           top: "50%",
-          transform: "translateY(-50%)",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
         }}
       >
         <Form>
@@ -55,6 +58,16 @@ const Search = () => {
             </Row>
           </Container>
         </Form>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "0px",
+          width:"100%",
+        
+        }}
+      >
+        <SectionImage />
       </div>
     </section>
   );
