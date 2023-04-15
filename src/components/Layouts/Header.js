@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, Button ,NavDropdown} from "react-bootstrap";
 const Header = () => {
   return (
     <>
-     <Navbar sticky="top" bg="light" expand="lg">
+     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">TechnoPark</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

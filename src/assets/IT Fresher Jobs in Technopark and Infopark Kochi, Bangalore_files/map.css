@@ -1,0 +1,747 @@
+
+.mapael .map .map-outer-shadow {
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 20px 79px 0 rgba(127, 132, 148, 0.4);
+  position: absolute;
+  top: 68px;
+  right: -46px;
+  width: 629px;
+  height: 629px;
+  z-index: -1;
+  transform: scale(0.99, 0.99);
+}
+
+
+.mapael .map svg {
+  display: block;
+  filter: drop-shadow(-3px 10px 10px rgba(131, 128, 163, 0.6));
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.mapael .map .sl-img {
+  display: inline-block;
+  position: absolute;
+  bottom: 152px;
+  user-select: none;
+  right: 320px;
+}
+
+.mapael .map .enabled:hover {
+  fill: #284d77;
+  filter: url("#hover-outer-shadow");
+  stroke: none;
+}
+
+.mapael .map .enabled.selected {
+    fill: #fbbf4f;
+    filter: url(#path-shadow-filter);
+    stroke: none;
+}
+
+.mapael .map .shade-effect {
+  fill: #284d77;
+  filter: url("#outer-shadow");
+  stroke: none;
+  opacity: 0;
+}
+
+.mapael .map .makeVisible {
+  opacity: 1;
+}
+
+.mapael .map .enabled {
+    fill: #43cc7c;
+    stroke: rgba(34, 136, 83, 0.4);
+    cursor: pointer;
+}
+
+.mapael .map .enabled.extra-color {
+  fill: #fff;
+}
+
+.mapael .map .enabled.selected.extra-color {
+  fill: #fabf4f;
+  filter: url("#path-shadow-filter");
+  stroke: none;
+}
+
+.mapael .map .enabled:after {
+  display: block;
+  content: "0";
+  background-color: red;
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+}
+
+.IN-LD {
+  transform: translate(250px, 445px);
+  width: 35px;
+  height: 50px;
+}
+
+.mapael .map .description {
+  pointer-events: none;
+  position: absolute;
+  /*font-family: sans-serif,Arial;*/
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px 4px 0 4px;
+  text-align: center;
+  background-image: linear-gradient(273deg, #e6003c, #f51553);
+  padding: 7px;
+  z-index: 5;
+  margin: 0 auto;
+  color: #ffffff;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: none;
+}
+
+.mapael .map .description.active {
+  display: block;
+}
+
+.mapael .map .description:after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #e6003c;
+  transform: skew(45deg);
+}
+
+.mapael .map {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.mapael .map .mobile-view .iig-cta {
+  margin: 35px auto 0;
+  display: block;
+}
+@media only screen and (min-width: 1024px) {
+  .mapael .map {
+    padding: 0;
+    margin: 0;
+    /*.desktop-view{
+        @include flex;
+        align-items: center;
+      }*/
+  }
+  .mapael .map:before {
+    content: "";
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background: url("../../images/map/shape-left.svg")
+      no-repeat -610px -250px / contain; */
+    z-index: -1;
+    /*-webkit-transform: skewY(3deg);
+    transform: skewY(3deg);*/
+    overflow: hidden;
+    transform-origin: top;
+  }
+}
+.mapael .map .india-map-details {
+  background: transparent;
+  max-width: 420px;
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 0 0 15px;
+  margin: auto 0;
+}
+.mapael .map .india-map-details .sector-text p {
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mapael .map .india-map-details {
+    max-width: 600px;
+  }
+  .mapael .map .india-map-details .sector-text p {
+    line-height: 1.6;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mapael .map .india-map {
+    background: url("../../images/map/map_bottom.png")
+      no-repeat -14px -32px;
+    width: 735px;
+    height: 705px;
+    position: relative;
+    float: right;
+    clip-path: ellipse(313px 313px at 369px 333px);
+    -webkit-clip-path: ellipse(313px 313px at 369px 333px);
+    overflow: hidden;
+    right: -112px;
+    top: 31px;
+    margin: 20px 0;
+  }
+  .mapael .map .ripple-effect-background {
+    background: url("../../images/map/map_top.png")
+      no-repeat -15px -30px;
+    width: 735px;
+    height: 705px;
+  }
+}
+
+.mobile-view.map-mobile-back .state-mob-list:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  position: absolute;
+  background: url("../../images/map/india-map-mob.png")
+    no-repeat top center;
+  display: inline-block;
+}
+
+.state-mob-list {
+  position: relative;
+}
+.state-mob-list .slick-list {
+  padding-left: 0 !important;
+}
+.state-mob-list li:before {
+  background: #6357d5 !important;
+  border: 5px solid #e1dff6 !important;
+}
+.state-mob-list li a {
+  color: #000;
+  font-size: 18px;
+  display: block;
+}
+
+.states-dropdown {
+  right: 0 !important;
+}
+@media (min-width: 1300px) {
+  .states-dropdown {
+    right: -30px !important;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .states-dropdown {
+    display: none !important;
+  }
+}
+
+
+.button {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 2px 25px;
+  line-height: 3;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  min-width: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(to right, #e6003c, #f51553);
+  background-image: -webkit-linear-gradient(to right, #e6003c, #f51553);
+  background-image: -ms-linear-gradient(to right, #e6003c, #f51553);
+  background-image: linear-gradient(to right, #e6003c, #f51553);
+  box-shadow: 0 5px 8px 0 rgba(237, 53, 70, 0.36);
+  color: #fff;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s; }
+  .button:hover {
+    background-image: linear-gradient(to right, #f30e4a, #fb2e66);
+    box-shadow: 0 14px 27px 0 rgba(237, 53, 70, 0.43); }
+  .button:focus {
+    background-image: linear-gradient(to right, #d00036, #eb114c);
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.23); }
+  .button.white {
+    border: 2px solid #f41451;
+    border-radius: 6px;
+    background-image: none;
+    color: #f41451; }
+  
+.wrapper {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 15px;
+  position: relative; }
+  .wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+
+
+.mobile-view {
+  display: block; }
+  @media only screen and (min-width: 1024px) {
+    .mobile-view {
+      display: none !important; } }
+
+.desktop-view {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .desktop-view {
+      display: block; } }
+
+
+
+.state-feature h2 {
+    font-weight: bold;
+}
+.state-feature h4 {
+    font-size: 14px;
+}
+.state-feature:hover {
+    background: #0088db;
+    color: #fff;
+}
+.state-feature2:hover {
+    background: #FF9800;
+    color: #fff;
+}
+.state-feature2 h4 {
+    font-size: 14px;
+}
+
+.state-name .bottom-snap, .sectors-info .bottom-snap {
+    align-items: center;
+    padding-bottom: 11px;
+    margin-top: 18px;
+}
+.margin-0 {
+    margin: 0!important;
+}
+
+
+
+
+
+input,
+select,
+textarea {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.tech-jobs-map-section .map-outer-shadow {
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 20px 79px 0 rgba(127, 132, 148, 0.4);
+  position: absolute;
+  top: 68px;
+  right: -46px;
+  width: 629px;
+  height: 629px;
+  z-index: -1;
+  transform: scale(0.99, 0.99);
+}
+
+
+.tech-jobs-map-section svg {
+  display: block;
+  filter: drop-shadow(-3px 10px 10px rgba(131, 128, 163, 0.6));
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.tech-jobs-map-section .sl-img {
+  display: inline-block;
+  position: absolute;
+  bottom: 152px;
+  user-select: none;
+  right: 320px;
+}
+
+.tech-jobs-map-section .enabled:hover {
+  fill: #284d77;
+  filter: url("#hover-outer-shadow");
+  stroke: none;
+}
+
+.tech-jobs-map-section .enabled.selected {
+    fill: #fbbf4f;
+    filter: url(#path-shadow-filter);
+    stroke: none;
+}
+
+.tech-jobs-map-section .shade-effect {
+  fill: #284d77;
+  filter: url("#outer-shadow");
+  stroke: none;
+  opacity: 0;
+}
+.pagination {
+    padding: 0px 0;
+}
+.tech-jobs-map-section .makeVisible {
+  opacity: 1;
+}
+
+.tech-jobs-map-section .enabled {
+    fill: #43cc7c;
+    stroke: rgba(34, 136, 83, 0.4);
+    cursor: pointer;
+}
+
+.tech-jobs-map-section .enabled.extra-color {
+  fill: #fff;
+}
+
+.tech-jobs-map-section .enabled.selected.extra-color {
+  fill: #fabf4f;
+  filter: url("#path-shadow-filter");
+  stroke: none;
+}
+
+.tech-jobs-map-section .enabled:after {
+  display: block;
+  content: "0";
+  background-color: red;
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+}
+
+.IN-LD {
+  transform: translate(250px, 445px);
+  width: 35px;
+  height: 50px;
+}
+
+.tech-jobs-map-section .description {
+  pointer-events: none;
+  position: absolute;
+  /*font-family: sans-serif,Arial;*/
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px 4px 0 4px;
+  text-align: center;
+  background-image: linear-gradient(273deg, #e6003c, #f51553);
+  padding: 7px;
+  z-index: 5;
+  margin: 0 auto;
+  color: #ffffff;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tech-jobs-map-section .description.active {
+  display: block;
+}
+
+.tech-jobs-map-section .description:after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #e6003c;
+  transform: skew(45deg);
+}
+
+.tech-jobs-map-section {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.tech-jobs-map-section .mobile-view .iig-cta {
+  margin: 35px auto 0;
+  display: block;
+}
+@media only screen and (min-width: 1024px) {
+  .tech-jobs-map-section {
+    padding: 0;
+    margin: 0;
+    /*.desktop-view{
+        @include flex;
+        align-items: center;
+      }*/
+  }
+  .tech-jobs-map-section:before {
+    content: "";
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background: url("../../images/map/shape-left.svg")
+      no-repeat -610px -250px / contain; */
+    z-index: -1;
+    /*-webkit-transform: skewY(3deg);
+    transform: skewY(3deg);*/
+    overflow: hidden;
+    transform-origin: top;
+  }
+}
+
+.tech-jobs-map-section .india-map-details .sector-text p {
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .tech-jobs-map-section .india-map-details .sector-text p {
+    line-height: 1.6;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .tech-jobs-map-section .india-map {
+    background: url("../../images/map/map_bottom.png")
+      no-repeat -14px -32px;
+    width: 735px;
+    height: 705px;
+    position: relative;
+    float: right;
+    clip-path: ellipse(313px 313px at 369px 333px);
+    -webkit-clip-path: ellipse(313px 313px at 369px 333px);
+    overflow: hidden;
+    right: -112px;
+    top: 31px;
+    margin: 20px 0;
+  }
+  .tech-jobs-map-section .ripple-effect-background {
+    background: url("../../images/map/map_top.png")
+      no-repeat -15px -30px;
+    width: 735px;
+    height: 705px;
+  }
+}
+
+.mobile-view.map-mobile-back .state-mob-list:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  position: absolute;
+  background: url("../../images/map/india-map-mob.png")
+    no-repeat top center;
+  display: inline-block;
+}
+
+.state-mob-list {
+  position: relative;
+}
+.state-mob-list .slick-list {
+  padding-left: 0 !important;
+}
+.state-mob-list li:before {
+  background: #6357d5 !important;
+  border: 5px solid #e1dff6 !important;
+}
+.state-mob-list li a {
+  color: #000;
+  font-size: 18px;
+  display: block;
+}
+
+.states-dropdown {
+  right: 0 !important;
+}
+@media (min-width: 1300px) {
+  .states-dropdown {
+    right: -30px !important;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .states-dropdown {
+    display: none !important;
+  }
+}
+
+
+.button {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 2px 25px;
+  line-height: 3;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  min-width: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(to right, #e6003c, #f51553);
+  background-image: -webkit-linear-gradient(to right, #e6003c, #f51553);
+  background-image: -ms-linear-gradient(to right, #e6003c, #f51553);
+  background-image: linear-gradient(to right, #e6003c, #f51553);
+  box-shadow: 0 5px 8px 0 rgba(237, 53, 70, 0.36);
+  color: #fff;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  }
+  .button:hover {
+    background-image: linear-gradient(to right, #f30e4a, #fb2e66);
+    box-shadow: 0 14px 27px 0 rgba(237, 53, 70, 0.43); }
+  .button:focus {
+    background-image: linear-gradient(to right, #d00036, #eb114c);
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.23); }
+  .button.white {
+    border: 2px solid #f41451;
+    border-radius: 6px;
+    background-image: none;
+    color: #f41451; }
+  
+.wrapper {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 15px;
+  position: relative; }
+  .wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+.state-feature img {
+    width: 46px;
+    height: 46px;
+}
+.state-feature2 img {
+    width: 46px;
+}
+
+.mobile-view {
+  display: block; }
+  @media only screen and (min-width: 1024px) {
+    .mobile-view {
+      display: none !important; } }
+
+.desktop-view {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .desktop-view {
+      display: block; } }
+
+.state-feature2 {
+   
+border: solid 2px #FF9800;
+   text-align: center;
+
+    width: 32%;
+    min-height: 100px;
+    margin: 0 2px;
+    padding: 12px 20px;
+}
+.state-feature {
+    text-align: center;
+    border: solid 2px #0088db;
+    width: 32%;
+    min-height: 100px;
+    margin: 0 2px;
+    padding: 12px 20px;
+}
+.state-feature h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #24b24c;
+    margin-top: 9px;
+}
+.state-feature2 h2 {
+  font-size: 28px;
+    font-weight: bold;
+    color: #24b24c;
+    margin-top: 9px;
+}
+.state-feature h4 {
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.state-feature2 h4 {
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.state-feature2:hover h4 {
+    font-size: 10px;
+    color: #ffffff;
+}.state-feature:hover h4 {
+    font-size: 12px;
+    color: #ffffff;
+}
+.state-feature:hover {
+    background: #0088db;
+    color: #fff;
+}
+.state-feature2:hover {
+    background: #FF9800;
+    color: #fff;
+}
+.state-feature2 h4 {
+    font-size: 10px;
+}
+
+.state-name .bottom-snap, .sectors-info .bottom-snap {
+    align-items: center;
+    padding-bottom: 11px;
+    margin-top: 18px;
+}
+.margin-0 {
+    margin: 0!important;
+}
+.col-md-5.state_details {
+    margin-top: 10%;
+}
+
+
+
+.block a:hover {
+    text-decoration: none;
+    background: #2196F3;
+    color: #fff;
+    border: none;
+}
+
+
+
+h4.heading-with-line {
+    position: relative;
+    font-family: poppins;
+    color: #2ea35e;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+

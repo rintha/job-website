@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Container, Col, Row } from "react-bootstrap";
-import bg from "../../assets/bg.jpg";
 import Form from "react-bootstrap/Form";
 import SectionImage from "./SectionImage";
 
@@ -8,7 +7,7 @@ const Search = () => {
   return (
     <section
       style={{
-        backgroundImage: `url(${bg})`,
+        backgroundImage: "url('https://technoparkjobs.com/frontend/images/banner_01.jpg')",
         backgroundSize: "cover",
         height: "500px",
         position: "relative",

@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (min-width:685px) and (max-width:1300px) {
+
+    .navbar-brand {
+        padding: 15px 15px;
+    }
+    .registerform {
+        width: 100%;
+        margin: 0;
+    }
+    .js-registration h1{
+        margin-top: 100px;
+    }
+
+    .registerform fieldset {
+        width: 90%;
+        padding: 20px 0;
+        margin: 0 5%;
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid #e8e1e1;
+    }
+
+    .js-registration{
+        padding-bottom: 10%;
+    }
+
+    .registerform .action-button{
+        float: none;
+    }
+
+    .applink {
+        margin: 10px;
+    }
+    .applink a img {
+        max-width: 75%;
+    }
+
+    .footer {
+        float: left;
+    }
+    .main-bannerarea{
+        height: auto;
+        float: none;
+        margin: 60px 0;
+    }
+    .banner-menu {
+        width: 97%;
+        float: left;
+        height: auto;
+    }
+
+    .banner-menu ul {
+        float: none;
+        list-style: none;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .banner-menu ul li {
+        float: none;
+    }
+
+    .banner-menu li a:hover {
+        color: #1eb047;
+        /*text-decoration: none;*/
+    }
+
+    .banner-menu ul li {
+        margin: 5px 10px;
+        padding: 10px;
+        border-bottom: solid 1px #333;
+    }
+
+    .search-keyword{
+        width: 97%;
+        margin: 20px 0 10px 0;
+        font-size: 14px;
+    }
+
+    .exp-list{
+        width: 48%;
+        margin: 0 6px 10px 0;
+    }
+
+    .search-btn{
+        width: 100%;
+    }
+
+    .nav-pills > li {
+        float: none;
+        text-align: center;
+    }
+
+    .popular-jobs {
+        float: left;
+        padding: 20px;
+    }
+
+    .browseby{
+        display: none;
+    }
+
+    .servicebox1, .servicebox2 {
+        margin: 5px 0;
+        width: 100%!important;
+    }
+
+    .footer-box {
+        padding: 25px 0;
+        text-align: center;
+    }
+    .job-position ul li {
+        float: none;
+    }
+    .apply-job{
+        padding: 0;
+    }
+    .apply-job a{
+        margin: 0 0;
+
+    }
+    .ads{
+        display: none;
+    }
+
+    .tab-login {
+        margin-left: 3%;
+    }
+
+    .advnc-search{
+        float: none;
+    }
+
+    .range-bar{
+        float: none;
+    }
+    .ads-sidebar ul li {
+        margin: 10px 10px;
+        float: left;
+        width: 28%;
+    }
+
+    .welcome-area{
+        width: 78%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+    }
+
+    .welcome-page {
+        margin-top: 50px;
+    }
+
+    .welcome-area a {
+        width: 100%;
+        float: left;
+    }
+    .left-bg {
+        display: none;
+    }
+#video-laptop{
+    display: none;
+}
+.mobile-video{
+    display: block;
+}
+}
