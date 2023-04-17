@@ -1,0 +1,57 @@
+.animated-progress .progress-bar {
+  transition: width 0.5s ease-out;
+  background-image: linear-gradient(
+    to right,
+    #c33538 5%,
+    #fff002 49%,
+    #6bbf74 95%
+  );
+}
+ul.d-flex {
+  width: 100%;
+  justify-content: space-between;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.carousel-card {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 575px) {
+  .card-container {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .card-container {
+    flex-direction: row;
+    margin: 0 -10px;
+  }
+
+  .card-container > div {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-container {
+    flex-direction: row;
+    margin: 0 -10px;
+  }
+
+  .card-container > div {
+    flex: 0 0 calc(25% - 20px);
+    margin: 0 10px;
+  }
+}

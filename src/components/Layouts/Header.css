@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+    .navbar-nav {
+      align-items: center;
+      display: flex;
+      margin-right: 15px;
+    }
+  }
+  

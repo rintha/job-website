@@ -8,28 +8,21 @@ const Career = () => {
       style={{
         backgroundColor: "#e7fff2",
         height: "500px",
+        paddingBottom:"50px"
       }}
     >
       <div
-        className="m-5 text-center container"
+        className=" m-5 text-center "
         style={{
-          paddingTop: "50px",
+      
+          padding:"70px",
+          
         }}
       >
-        <div>
-          <h2>CAREER DEVELOPMENT & LEARNING</h2>
-          <hr />
-        </div>
-        <div className="d-flex justify-content-center">
-          <div className="m-3">
-            <CareerCard />
-          </div>
-          <div className="m-3">
-            <CareerCard />
-          </div>
-          <div className="m-3">
-            <CareerCard />
-          </div>
+          <h3 className="mb-5">CAREER DEVELOPMENT & LEARNING</h3>
+          
+        <div className="align-items-center">
+          <CareerCard/>
         </div>
       </div>
     </section>

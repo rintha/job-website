@@ -11,8 +11,8 @@ const Recruiters = () => {
   return (
     <section>
       <div className="m-3 px-3">
-        <h3>
-          TOP<span className="fw-bold"> RECRUITERS</span>{" "}
+        <h3 style={{fontWeight:"lighter"}}>
+          TOP<span style={{fontWeight:"bold"}}> RECRUITERS</span>{" "}
         </h3>
         <hr></hr>
       </div>

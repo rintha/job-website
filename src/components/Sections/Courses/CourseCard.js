@@ -3,18 +3,12 @@ import { Card, Button } from "react-bootstrap";
 
 const CourseCard = () => {
   return (
-    <div>
-      <Card variant="light" style={{ width: "16rem" }}>
-        <Card.Header>Featured</Card.Header>
-        <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
-          <Card.Text>
-            With supporting text below as a natural lead-in to additional
-            content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
+    <div className="">
+    <div className="card m-2 " style={{width: "18rem",background:"none",border:"0"}}>
+      <div className="bg-primary mb-3 p-2">Graphic Designing</div>
+      <div className="mb-3">This course teach you how to use Adobe Illustrator, Photoshop and Corel DRAW to create stunning images and collages that can ..</div>
+      <div style={{borderRadius:"0",width:"8rem"}}className="btn btn-outline-primary text-success">More Info</div>
+    </div>
     </div>
   );
 };

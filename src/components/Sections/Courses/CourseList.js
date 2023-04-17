@@ -4,11 +4,11 @@ import Carousel from "react-bootstrap/Carousel";
 
 const CourseList = () => {
   return (
-    <div className="bg-light d-flex flex-column justify-content-center align-items-center">
+    <div className="p-4 bg-light">
       <div>
-        <p>Courses & Certifications</p>
+        <p className="h3">Courses & Certifications</p>
         <p>
-          Learn new Trending Skills, Choose E-learning certification to{" "}
+          Learn new Trending Skills, Choose E-learning certification t0
           <b>fast track your way up the career ladder.</b>
         </p>
       </div>

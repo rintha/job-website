@@ -1,4 +1,18 @@
-.Card:hover {
-  background-color: #e7fff2 !important;
-  border-color: #1f5a96 !important;
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
 }
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  .d-flex {
+    justify-content: space-between;
+  }
+}
+

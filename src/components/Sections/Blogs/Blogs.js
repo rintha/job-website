@@ -21,13 +21,13 @@ const Blogs = () => {
         </div>
         <div className="d-flex justify-content-center">
           <div className="m-3">
-            <BlogCard />
+            <BlogCard src="https://blog.technoparkjobs.com/blogging/get_featured_image/11" />
           </div>
           <div className="m-3">
-            <BlogCard />
+            <BlogCard src="https://blog.technoparkjobs.com/blogging/get_featured_image/10" />
           </div>
           <div className="m-3">
-            <BlogCard />
+            <BlogCard src="https://blog.technoparkjobs.com/blogging/get_featured_image/8" />
           </div>
         </div>
       </div>

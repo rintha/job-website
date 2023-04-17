@@ -1,28 +1,30 @@
 import React from "react";
-import { Button, Container, Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import SectionImage from "./SectionImage";
 
 const Search = () => {
   return (
-    <section
-      style={{
-        backgroundImage: "url('https://technoparkjobs.com/frontend/images/banner_01.jpg')",
-        backgroundSize: "cover",
-        height: "500px",
-        position: "relative",
-      }}
-    >
+    <section>
       <div
         style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
+          backgroundImage:
+            "url('https://technoparkjobs.com/frontend/images/banner_01.jpg')",
+          backgroundSize: "cover",
+          height: "500px",
+          position: "relative",
         }}
       >
-        <Form>
-          <Container>
+        <div
+          className="container"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <Form>
             <Row className="g-2">
               <Col lg className="d-flex flex-column flex-lg-row">
                 <Form.Control
@@ -55,18 +57,17 @@ const Search = () => {
                 </Button>
               </Col>
             </Row>
-          </Container>
-        </Form>
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          bottom: "0px",
-          width:"100%",
-        
-        }}
-      >
-        <SectionImage />
+          </Form>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            bottom: "0px",
+            width: "100%",
+          }}
+        >
+          <SectionImage />
+        </div>
       </div>
     </section>
   );

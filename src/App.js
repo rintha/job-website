@@ -1,28 +1,38 @@
-import Courses from "./components/Sections/Courses/Courses";
-import Main from "./components/Sections/Main-Content/Main";
-import Recruiters from "./components/Sections/Recruiters/Recruiters";
-import Search from "./components/Sections/SearchBar-Section/Search";
-import Footer from "./components/Layouts/Footer";
-import Header from "./components/Layouts/Header";
-import Career from "./components/Sections/Career/Career";
-import TechnoMore from "./components/Sections/technopark/TechnoMore";
-import Blogs from "./components/Sections/Blogs/Blogs";
-import Map from "./components/Sections/Map/Map";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Home from "./components/Pages/Home";
+import JobPost from "./components/Pages/JobPost/JobPost";
+import Register from "./components/Pages/Register/Register";
+import International from "./components/Pages/International Jobs/International";
+import FresherJobs from "./components/Pages/Fresher Jobs/FresherJobs";
+import Companies from "./components/Pages/Companies/Companies";
+import TechnologyPark from "./components/Pages/Technology Park/TechnologyPark";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Search />
-      <Recruiters />
-      <Main />
-      <Courses />
-      <Map/>
-      <Career />
-      <TechnoMore/>
-      <Blogs/>
-      <Footer />
-    </div>
+    <Switch>
+      <Route path="/jobpost">
+        <JobPost />
+      </Route>
+      <Route path="/register">
+        <Register />
+      </Route>
+      <Route path="/internationaljobs">
+        <International />
+      </Route>
+      <Route path="/fresherjobs">
+        <FresherJobs />
+      </Route>
+      <Route path="/companies">
+        <Companies />
+      </Route>
+      <Route path="/technologyparks">
+        <TechnologyPark />
+      </Route>
+      <Route exact path="/">
+        <Home />
+      </Route>
+    </Switch>
   );
 }
 

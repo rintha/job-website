@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-
-const JobCard = () => {
+  
+const JobCard = ({src}) => {
   return (
     <div className=" mt-3">
       <Card style={{ boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)" }}>
@@ -10,7 +10,7 @@ const JobCard = () => {
             <div className="d-flex justify-content-center justify-content-lg-start align-items-center">
               <Card.Img
                 variant="left"
-                src="https://technoparkjobs.com/getfile/companyLogo/27ayNwz8U49jtsGRPpZM5FuAkcXBhr.jpg"
+                src={src}
                 style={{
                   height: "100px",
                   width: "100px",

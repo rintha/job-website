@@ -1,0 +1,30 @@
+.company-search-area select {
+  border: solid 1px #24b24c;
+  background: none;
+  width: 100%;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px;
+  height: 46px;
+}
+.search_park {
+  background: #008e45 !important;
+  padding: 7px 60px !important;
+  font-size: 22px !important;
+}
+.company-search-area {
+  margin: 25px 0;
+  padding: 0 6px;
+}
+  @media (max-width: 767px) {
+    .para {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .para {
+      top: 60%;
+      max-width: 60%;
+      padding: 5px;
+    }
+  }

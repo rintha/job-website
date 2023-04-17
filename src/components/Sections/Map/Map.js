@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col } from "react-bootstrap";
+// import OpenL from "./OpenL";
 
 const Map = () => {
   return (
@@ -99,7 +100,7 @@ const Map = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 img"></div>
+          {/* <div className="col-md-6 img"><OpenL/></div> */}
         </div>
       </div>
     </section>

@@ -1,30 +1,44 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal, Form } from "react-bootstrap";
+import log from "../../assets/login-bg.jpg";
 
 const ModalSignIn = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+      <span className="text-muted"onClick={handleShow}>
+        Sign In
+      </span>
 
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <Modal.Header className="bg-success p-4" closeButton></Modal.Header>
+        <Modal.Body>
+          <div className="d-flex h-100 ">
+            <div className="flex-grow-1">
+              <img src={log} alt="" className="img-fluid h-100" />
+            </div>
+            <div className="flex-grow-1 ms-3">
+              <Form>
+                <Form.Group className="mb-3">
+                  <Form.Label>E-mail</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email address"
+                  />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Button variant="success">Log In</Button>
+              </Form>
+            </div>
+          </div>
+        </Modal.Body>
       </Modal>
     </>
   );
