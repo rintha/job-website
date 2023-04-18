@@ -10,8 +10,8 @@ const Search = () => {
         style={{
           backgroundImage:
             "url('https://technoparkjobs.com/frontend/images/banner_01.jpg')",
-          backgroundSize: "cover",
-          height: "500px",
+          backgroundSize:"fit",
+          height: "100vh",
           position: "relative",
         }}
       >

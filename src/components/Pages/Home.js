@@ -15,15 +15,17 @@ const Home = () => {
     <>
       <Header />
       <Search />
-      <Recruiters />
+      <div className="d-none d-md-block">
+        <Recruiters />
+      </div>
       <Main />
-  
+      <div className="d-none d-md-block">
         <Courses />
         <Map />
         <Career />
         <TechnoMore />
         <Blogs />
-  
+      </div>
       <Footer />
     </>
   );

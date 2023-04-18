@@ -12,10 +12,9 @@ const SectionImage = () => {
         padding: "20px",
         display: "flex",
         justifyContent: "space-between",
-        
       }}
     >
-      <div className="mb-2">
+      <div className="d-none d-md-block">
         <Button
           as={Link}
           to="/internationaljobs"
@@ -54,16 +53,16 @@ const SectionImage = () => {
       <Col
         xs={{ span: 12 }}
         md={{ span: 4, offset: 8 }}
-        style={{ position: "absolute", bottom: "2em", }}
+        style={{ position: "absolute", bottom: "2em" }}
       >
         {" "}
-        <Row className="justify-content-md-end justify-content-center ">
+        <Row className="justify-content-md-end  ">
           <span className="text-center">New User?</span>
           <Button className="text-white mb-2" variant="warning">
             Upload Resume
           </Button>
         </Row>
-        <Row className="justify-content-md-end justify-content-center">
+        <Row className="justify-content-md-end ">
           <Button variant="success">Create Job Alerts</Button>
         </Row>
       </Col>

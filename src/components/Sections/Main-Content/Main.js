@@ -1,48 +1,95 @@
-import React from "react";
-import { Button, ListGroup } from "react-bootstrap";
-import JobCard from "./JobCard";
+import React, { useState } from "react";
+import { ListGroup } from "react-bootstrap";
+import "./MainStyle.css";
+import Jobs from "./Jobs";
+import Industries from "./Industries";
+import TechnoPark from "./TechnoPark";
+import Location from "./Location";
 
 const Main = () => {
+  const [activeItem, setActiveItem] = useState("#link1");
+
+  const handleItemClick = (eventKey) => {
+    setActiveItem(eventKey);
+  };
+
   return (
-    <section className="m-5 " style={{ width: "60rem" }}>
-      <div>
-        <ListGroup key="xl" horizontal="xl">
-          <ListGroup.Item action href="#link1">
-            LATEST JOBS
-          </ListGroup.Item>
-          <ListGroup.Item action href="#link2">
-            INDUSTRIES
-          </ListGroup.Item>
-          <ListGroup.Item action href="#link3">
-            TECHNOLOGY PARKS
-          </ListGroup.Item>
-          <ListGroup.Item action href="#link4">
-            LOCATION
-          </ListGroup.Item>
-        </ListGroup>
-        <JobCard src="//technoparkjobs.com/getfile/companyLogo/tC6ZbpvfcGxeh97d4TFzSEaD3mnBXJ.jpg" 
-        title="Magento Developer" company="Penguin IT Academy" place="Kochi"/>
-        <JobCard src="//technoparkjobs.com/getfile/companyLogo/SCzA5H3nQxYkvyrhjZw7seafMB6K9d.jpg" 
-        title="E-Mail Marketing Expert" company="RSGP PVT Ltd" place="Kochi"/>
-        <JobCard src="https://technoparkjobs.com/getfile/companyLogo/EyTGbnUAtvCpeQXRBJ2z4mLHdYhcFk.jpg"
-        title="Business Developemt Manager" company="Aspire" place="Kochi" />
-        <JobCard src="https://technoparkjobs.com/getfile/companyLogo/27ayNwz8U49jtsGRPpZM5FuAkcXBhr.jpg"
-         title="Python Developer" company="Juniour" place="Kochi" />
-        <JobCard src="//technoparkjobs.com/getfile/companyLogo/TxNC3B8G2HWMVKy6eAu7JPtD9UEbzm.jpg"
-         title="Magento Developer" company="Yarab Technologies" place="Kochi" />
-        <JobCard src="//technoparkjobs.com/getfile/companyLogo/tC6ZbpvfcGxeh97d4TFzSEaD3mnBXJ.jpg" 
-        title="E-Mail Marketing Expert" company="Penguin IT Academy" place="Kochi"/>
-        <JobCard src="https://technoparkjobs.com/getfile/companyLogo/SrGeC9J8vHpdLhV7AyBju3U26YzTtf.jpg" 
-        title="Business Developemt Manager" company="IQMatrix" place="Kochi"/>
-        <JobCard src="https://technoparkjobs.com/getfile/companyLogo/27ayNwz8U49jtsGRPpZM5FuAkcXBhr.jpg" 
-         title="Python Developer" company="Juniour" place="Kochi" />
-        <JobCard src="https://technoparkjobs.com/getfile/companyLogo/27ayNwz8U49jtsGRPpZM5FuAkcXBhr.jpg" 
-         title="Python Developer" company="Juniour" place="Kochi"/>
-        <JobCard src="https://technoparkjobs.com/getfile/companyLogo/7mFGxhRadMw4UeT6kXWc8ZBSur2bLA.jpg" 
-         title="Python Developer" company="APPSTEAM" place="Kochi"/>
-      </div>
-      <div className="mt-3 text-center">
-        <Button variant="success">view more</Button>
+    <section className="m-5 " style={{ width: "100%" }}>
+      <div style={{ width: "60%" }}>
+        <div className="list">
+          <ListGroup
+            variant="flush"
+            key="xl"
+            horizontal="xl"
+            style={{
+              width: "100%",
+              border: "1px solid #ced4da",
+              borderRadius: "5px",
+            }}
+          >
+            <ListGroup.Item
+              action
+              href="#link1"
+              onClick={() => handleItemClick("#link1")}
+              style={{
+                border: "none",
+                borderRadius: "4px",
+                backgroundColor: activeItem === "#link1" ? "#28a745" : "",
+                color: activeItem === "#link1" ? "#fff" : "",
+                borderRight: "1px solid #ced4da",
+              }}
+            >
+              LATEST JOBS
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="#link2"
+              onClick={() => handleItemClick("#link2")}
+              style={{
+                border: "none",
+                borderRadius: "4px",
+                backgroundColor: activeItem === "#link2" ? "#28a745" : "",
+                color: activeItem === "#link2" ? "#fff" : "",
+                borderRight: "1px solid #ced4da",
+              }}
+            >
+              INDUSTRIES
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="#link3"
+              onClick={() => handleItemClick("#link3")}
+              style={{
+                border: "none",
+                borderRadius: "4px",
+                backgroundColor: activeItem === "#link3" ? "#28a745" : "",
+                color: activeItem === "#link3" ? "#fff" : "",
+                borderRight: "1px solid #ced4da",
+              }}
+            >
+              TECHNOLOGY PARKS
+            </ListGroup.Item>
+            <ListGroup.Item
+              action
+              href="#link4"
+              onClick={() => handleItemClick("#link4")}
+              style={{
+                border: "none",
+                borderRadius: "4px",
+                backgroundColor: activeItem === "#link4" ? "#28a745" : "",
+                color: activeItem === "#link4" ? "#fff" : "",
+                borderTopRightRadius: "5px",
+                borderBottomRightRadius: "5px",
+              }}
+            >
+              LOCATION
+            </ListGroup.Item>
+          </ListGroup>
+        </div>
+        {activeItem === "#link1" && <Jobs />}
+        {activeItem === "#link2" && <Industries />}
+        {activeItem === "#link3" && <TechnoPark />}
+        {activeItem === "#link4" && <Location />}
       </div>
     </section>
   );
