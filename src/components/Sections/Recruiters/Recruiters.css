@@ -1,0 +1,8 @@
+.recruiter .section_title_line_medium{
+    width: 100%;
+    height: 3px;
+    padding: 0px;
+    margin: 15px 0px;
+    text-align: left;
+    background: url('../../../assets//title_line6.png')  0 0 no-repeat;
+  }

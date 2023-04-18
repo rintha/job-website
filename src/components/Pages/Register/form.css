@@ -1,0 +1,40 @@
+.container h1{margin-top: 100px;
+    color: white;
+}
+
+
+/* 
+input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #888;
+    transition: all 0.2s;
+  }
+  
+  input:focus {
+    outline: none;
+    border-bottom-color: green;
+    color: green;
+  }
+  
+  input:valid {
+    border-bottom-color: green;
+    color: green;
+  }
+  
+  input:placeholder-shown {
+    border-bottom-color: #ddd;
+    color: #aaa;
+    transition: all 0.2s;
+  }
+  
+  input:focus::placeholder {
+    transform: translateY(-1.5rem);
+    font-size: 0.8rem;
+    color: green;
+    transition: all 0.2s;
+  } 
+   */

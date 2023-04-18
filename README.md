@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# TechnoPark Jobs website clone 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+This React Technopark Jobs Clone application includes the following features:  
+
+### `Home page contains
+
+Search bar to search for jobs by location, experience, and blogs/career provided by the companies
+Post a job website page for recruiters to post job opportunities
+Registration form for job seekers to create an account and apply for jobs
+International jobs list page to search for job opportunities in different countries
+Fresher job page to search for job opportunities for fresh graduates
+Technology park details page to learn about different technology parks
+Companies details page to learn about different companies and their job opportunities
+Courses and certifications page to search for courses and certifications provided by different institutes
+
+###`Technology Stack
+
+React
+React Bootstrap
+Firebase
+
+###`Redirections
+
+Post a job - Job posting page, includes top candidates, top employers, etc.
+Register - Registering employee form.
+International jobs - Page to search for international job opportunities
+Fresher Jobs - Page to search for job opportunities for fresh graduates
+Companies - Page to search for job opportunities in different companies
+Technology parks - Page to learn about different technology parks

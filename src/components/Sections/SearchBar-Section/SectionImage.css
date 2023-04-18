@@ -1,0 +1,54 @@
+.div-hover:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.bg-image {
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 2em;
+}
+
+.overlay {
+  background-image: url("https://technoparkjobs.com/frontend/images/banner_02.jpg");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .search-form {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .search-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .search-form {
+    max-width: 100%;
+  }
+}
