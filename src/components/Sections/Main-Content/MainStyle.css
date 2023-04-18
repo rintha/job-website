@@ -1,9 +1,6 @@
 .list-group-item {
   background-color: #24b24c;
 }
-.industry-list {
-  margin: 25px 0;
-}
 
 .industry-list a {
   text-decoration: none;
@@ -17,7 +14,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 100%;
   display: flex;
-  justify-content: center;
   margin-top: 20px;
   padding: 15px;
   border-radius: 5px;

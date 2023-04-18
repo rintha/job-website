@@ -62,7 +62,7 @@ const Footer = () => {
               <p style={{ fontSize: "18px" }}>Follow Us</p>
               <ul style={{ listStyle: "none", padding: 0 }}>
                 <li style={{ fontSize: "14px" }}>
-                  <i>hy</i>
+                  <i></i>
                 </li>
                 <li style={{ fontSize: "14px" }}>
                   <img

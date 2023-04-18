@@ -55,7 +55,7 @@ const TechnologyMain = () => {
           />
           <TechnoCard
             src="https://technoparkjobs.com/getfile/technologyPark/7aRkn9pLEsShWG482UbxVTvuQBZArf.jpg"
-            title="TECHNOCITY-THIRUVANANTHAPURA "
+            title="TECHNOCITY-THIRUVANANTHAPURAM "
             add="thiruvananthapuram"
             des="Technocity is a technology park an under construction integrated township in Thiruvananthapuram, Kerala, India de.."
           />

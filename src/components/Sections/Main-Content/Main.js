@@ -14,8 +14,11 @@ const Main = () => {
   };
 
   return (
-    <section className="m-5 " style={{ width: "100%" }}>
-      <div style={{ width: "60%" }}>
+    <section
+      className="m-5 d-flex flex-column flex-md-row justify-content-between"
+      style={{ width: "100%" }}
+    >
+      <div className="job" style={{ flex: "70%" }}>
         <div className="list">
           <ListGroup
             variant="flush"
@@ -25,6 +28,7 @@ const Main = () => {
               width: "100%",
               border: "1px solid #ced4da",
               borderRadius: "5px",
+              textAlign: "center",
             }}
           >
             <ListGroup.Item
@@ -90,6 +94,12 @@ const Main = () => {
         {activeItem === "#link2" && <Industries />}
         {activeItem === "#link3" && <TechnoPark />}
         {activeItem === "#link4" && <Location />}
+      </div>
+      <div
+        className="ad"
+        style={{ flex: "30%", margin: "5rem", marginTop: "5rem" }}
+      >
+        <img src="kkk" alt="advertisement"></img>
       </div>
     </section>
   );

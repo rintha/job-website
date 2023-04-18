@@ -3,17 +3,16 @@ import { Card, Button } from "react-bootstrap";
 
 const JobCard = ({ src, title, company, place }) => {
   return (
-    <div className="mt-3" style={{ maxWidth: "800px" }}>
+    <div className="mt-3">
       <Card
         style={{
           boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)",
-          maxWidth: "90%",
+          width: "100%",
         }}
       >
         <Card.Body>
           <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div className="d-flex flex-column justify-content-start">
-              {/* <Card.Title className="text-success mb-0">{title}</Card.Title> */}
               <Card.Text>
                 <div className="d-flex align-items-center">
                   <img
@@ -28,7 +27,12 @@ const JobCard = ({ src, title, company, place }) => {
                   />
                   <div>
                     <div>
-                      <p style={{ fontSize:"18px",fontWeight:"bold"}} className="text-success mb-0 ">{title}</p>
+                      <p
+                        style={{ fontSize: "18px", fontWeight: "bold" }}
+                        className="text-success mb-0 "
+                      >
+                        {title}
+                      </p>
                       <p style={{ fontSize: "14px", margin: "0" }}>
                         <i>{company}</i>
                       </p>
@@ -61,7 +65,8 @@ const JobCard = ({ src, title, company, place }) => {
             </div>
             <Button
               variant="success"
-              className="mt-3 mt-md-0 ms-md-3 align-self-md-center"
+              className=" mt-3 mt-md-0 ms-md-3 align-self-md-center text-white" 
+             
             >
               Apply Now
             </Button>

@@ -11,7 +11,6 @@ const SectionImage = () => {
         backgroundColor: "rgba(132,255,201,0.5)",
         padding: "20px",
         display: "flex",
-        justifyContent: "space-between",
       }}
     >
       <div className="d-none d-md-block">
@@ -53,17 +52,23 @@ const SectionImage = () => {
       <Col
         xs={{ span: 12 }}
         md={{ span: 4, offset: 8 }}
-        style={{ position: "absolute", bottom: "2em" }}
+        style={{ position: "absolute", bottom: "2em", }}
       >
         {" "}
-        <Row className="justify-content-md-end  ">
-          <span className="text-center">New User?</span>
-          <Button className="text-white mb-2" variant="warning">
+        <Row className="justify-content-md-end">
+          <span className="text-center fw-bold">New User?</span>
+          <Button
+            className="text-white mb-2 "
+            variant="warning"
+            style={{ width: "100%" }}
+          >
             Upload Resume
           </Button>
         </Row>
         <Row className="justify-content-md-end ">
-          <Button variant="success">Create Job Alerts</Button>
+          <Button  className="text-white" variant="success" style={{ width: "100%" }}>
+            Create Job Alerts
+          </Button>
         </Row>
       </Col>
     </div>

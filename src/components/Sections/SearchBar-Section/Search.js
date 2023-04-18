@@ -10,7 +10,7 @@ const Search = () => {
         style={{
           backgroundImage:
             "url('https://technoparkjobs.com/frontend/images/banner_01.jpg')",
-          backgroundSize:"fit",
+          backgroundSize: "cover",
           height: "100vh",
           position: "relative",
         }}
@@ -22,6 +22,7 @@ const Search = () => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
+        
           }}
         >
           <Form>
