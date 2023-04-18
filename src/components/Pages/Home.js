@@ -17,13 +17,13 @@ const Home = () => {
       <Search />
       <Recruiters />
       <Main />
-      <div className="d-none d-md-block">
+  
         <Courses />
         <Map />
         <Career />
         <TechnoMore />
         <Blogs />
-      </div>
+  
       <Footer />
     </>
   );

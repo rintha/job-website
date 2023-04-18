@@ -9,9 +9,11 @@ const International = () => {
   return (
     <>
       <Header />
+      <div style={{background:"#f0f5f4", }}>
       <HeaderImgIn />
       <InterMain />
       <InterCarousel />
+      </div>
       <Footer />
     </>
   );

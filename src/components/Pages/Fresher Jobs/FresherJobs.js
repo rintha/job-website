@@ -1,17 +1,18 @@
 import React from "react";
 import Footer from "../../Layouts/Footer";
 import FresherImg from "./FresherImg";
-import InterCarousel from "../International Jobs/InterCarousel";
 import FresherMain from "./FresherMain";
 import Header from "../../Layouts/Header";
+import "./fresher.css";
 
 const FresherJobs = () => {
   return (
     <>
-      <Header/>
-      <FresherImg />
-      <FresherMain />
-      <InterCarousel />
+      <Header />
+      <div style={{ background: "#f0f5f4" }}>
+        <FresherImg />
+        <FresherMain />
+      </div>
       <Footer />
     </>
   );

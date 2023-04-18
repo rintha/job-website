@@ -1,8 +1,7 @@
 import React from "react";
-import cbg from "../../../assets/cyberpark.jpg";
 import "./Technology.css";
 
-const TechnoCard = () => {
+const TechnoCard = ({src,title,des,add}) => {
   return (
     <div className="container mb-4">
       <div
@@ -19,11 +18,10 @@ const TechnoCard = () => {
         <div className="row img-md-cover d-flex align-items-center">
           <div className="col-12 col-md-12 col-lg-6 text-lg-left">
             <h5>
-              <b>CYBERPARK-KOZHIKODE</b>
+              <b>{title}</b>
             </h5>
             <p style={{ fontSize: "14px" }}>
-              Cyberpark, Kozhikode has been envisioned and conceptualized as a
-              major IT hub catering to the northern part of Ke..
+             {des}
             </p>
             <div
               className="address"
@@ -34,9 +32,7 @@ const TechnoCard = () => {
                 className="text-muted"
                 style={{ fontSize: "14px", lineHeight: "1rem" }}
               >
-                Chief Executive Officer, Cyberpark Kozhikode (A Govt. of Kerala
-                Undertaking) 28/1650D, Park Centre, KSITIL Special Economic
-                Zone, Nellikkode PO, Kozhikode-673 016, Kerala.
+                {add}
               </p>
             </div>
             <div className="email">
@@ -54,7 +50,7 @@ const TechnoCard = () => {
           </div>
           <div className="img col-12 col-md-12 col-lg-6">
             <img
-              src={cbg}
+              src={src}
               alt="cyberpark"
               className="img-fluid"
               style={{ maxWidth: "100%" }}
@@ -65,7 +61,7 @@ const TechnoCard = () => {
               Last Updated <span> · </span>18 May 2019
             </p>
           </div>
-          <div className="social">
+          <div className="social ">
             <button className="btn btn-outline-success">More Details</button>
           </div>
         </div>

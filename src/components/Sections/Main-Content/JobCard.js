@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
   
-const JobCard = ({src}) => {
+const JobCard = ({src,title,company,place}) => {
   return (
     <div className=" mt-3">
       <Card style={{ boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)" }}>
@@ -19,12 +19,12 @@ const JobCard = ({src}) => {
               />
               <div className="d-flex flex-column justify-content-start ms-lg-3">
                 <Card.Title className="text-success mb-0">
-                  Business Development Manager
+                  {title}
                 </Card.Title>
                 <Card.Text>
                   <div>
                     <p style={{ fontSize: "14px", margin: "0" }}>
-                      <i>Junior Dec 25 Pvt Ltd</i>
+                      <i>{company}</i>
                     </p>
                   </div>
                   <div
@@ -47,7 +47,7 @@ const JobCard = ({src}) => {
                         marginRight: "10px",
                       }}
                     >
-                      Thiruvananthapuram
+                      {place}
                     </p>
                     <p style={{ fontSize: "14px", marginBottom: "0" }}>
                       25,000 - 45,000 Monthly

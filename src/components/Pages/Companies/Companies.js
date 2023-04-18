@@ -8,11 +8,13 @@ import CompanyMain from "./CompanyMain";
 const Companies = () => {
   return (
     <>
-      <Header/>
-      <CompanyImg/>
-      <CompanyMain/>
-      <InterCarousel />
-      <Footer/>
+      <Header />
+      <div style={{ background: "#f0f5f4" }}>
+        <CompanyImg />
+        <CompanyMain />
+        <InterCarousel />
+      </div>
+      <Footer />
     </>
   );
 };

@@ -5,7 +5,7 @@ const InterMain = () => {
   return (
     <div>
       <div className="col-md-9 job-browse-international">
-        <p style={{ fontSize: "14px" }} className="heading">
+        <p  className="heading">
           Jobs by Location
         </p>
         <div className="section_title_line_medium"></div>

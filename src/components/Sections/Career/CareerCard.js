@@ -58,7 +58,7 @@ const CareerCard = () => {
             <img
               className="mb-4"
               style={{ width: "8rem", height: "5rem" }}
-              src="https://technoparkjobs.com/frontend/images/services/e-lerning.png"
+              src="https://technoparkjobs.com/frontend/images/services/cv.png"
               alt=""
             />
           </div>
@@ -95,7 +95,7 @@ const CareerCard = () => {
             <img
               className="mb-4"
               style={{ width: "8rem", height: "5rem" }}
-              src="https://technoparkjobs.com/frontend/images/services/e-lerning.png"
+              src="https://technoparkjobs.com/frontend/images/services/interview.png "
               alt=""
             />
           </div>

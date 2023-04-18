@@ -32,3 +32,40 @@
   font-weight: 500;
   line-height: 1.1;
 }
+.job-browse-international{
+  background: #fff;
+  border: solid 1px #d8d8d8;
+  margin: 3em 5em;
+}
+.job-browse-international h4{
+  font-size:16px;
+}	
+.carosel-large .section_title_line_medium {
+  width: 40%;
+  height: 3px;
+  padding: 0px;
+  margin: 15px 0px;
+  text-align: left;
+  background: url("../../../assets/title_line6.png") 0 0 no-repeat;
+}
+
+.job-browse-international .section_title_line_medium{
+  width: 50%;
+  height: 3px;
+  padding: 0px;
+  margin: 15px 0px;
+  text-align: left;
+  background: url('../../../assets//title_line6.png')  0 0 no-repeat;
+}
+.carosel .section_title_line_medium {
+  width: 50%;
+  height: 3px;
+  padding: 0px;
+  margin: 15px 0px;
+  text-align: left;
+  background: url("../../../assets/title_line6.png") 0 0 no-repeat;
+}
+.carosel{
+  margin: 2em;
+  bottom: 2em;
+}

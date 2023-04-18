@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Badge, CardImg, ProgressBar } from "react-bootstrap";
 import "./CandidateCard.css";
 
-const CandidateCard = () => {
+const CandidateCard = ({src,name,title}) => {
   return (
     <div className="carousel-card"> 
       <Card style={{ width: "13rem", height: "auto", margin: "2px" }}>
@@ -15,10 +15,10 @@ const CandidateCard = () => {
           </Badge>
         </Card.Header>
         <Card.Body className="text-center">
-          <CardImg src="https://employer.technoparkjobs.com/employer/employer-page/sheethalk.jpg"></CardImg>
-          <h5>SHEETHAL KURIAN</h5>
+          <CardImg src={src}></CardImg>
+          <h5>{name}</h5>
           <Card.Text style={{ lineHeight: ".5" }}>
-            <p>Hr Director</p>
+            <p>{title}</p>
             <p>
               <small>India</small>
             </p>

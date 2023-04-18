@@ -1,15 +1,14 @@
 import React from "react";
-import logo from "../../../assets/logo.png";
 import { Card } from "react-bootstrap";
 
-const RecCard = () => {
+const RecCard = ({src}) => {
   return (
     <div className="m-2">
       <Card style={{ width: "8rem", height: "6rem", borderRadius: 0 }}>
         <Card.Img
           style={{ width: "6rem", height: "3rem" }}
           variant="top"
-          src={logo}
+          src={src}
         />
         <Card.Body style={{ padding: "5px", textAlign: "center" }}>
           <hr style={{ margin: "5px 0" }} />

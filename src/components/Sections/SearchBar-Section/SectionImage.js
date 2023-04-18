@@ -15,40 +15,39 @@ const SectionImage = () => {
         
       }}
     >
-      <div className="mb-2 d-none d-md-block">
-        {" "}
-        <span
+      <div className="mb-2">
+        <Button
           as={Link}
           to="/internationaljobs"
           className="badge rounded-pill bg-success me-1 p-2"
           style={{ fontWeight: "normal" }}
         >
           International Jobs
-        </span>
-        <span
+        </Button>
+        <Button
           as={Link}
           to="/fresherjobs"
           className="badge rounded-pill bg-success me-1 p-2"
           style={{ fontWeight: "normal" }}
         >
           Fresher Jobs
-        </span>
-        <span
+        </Button>
+        <Button
           as={Link}
           to="/companies"
           className="badge rounded-pill bg-success me-1 p-2"
           style={{ fontWeight: "normal" }}
         >
           Companies
-        </span>
-        <span
+        </Button>
+        <Button
           as={Link}
           to="/technologyparks"
           className="badge rounded-pill bg-success me-1 p-2"
           style={{ fontWeight: "normal" }}
         >
           Technology Parks
-        </span>
+        </Button>
         <h2 className="mt-2">Experience the new way to work</h2>
         <p>see jobs we've picked for you</p>
       </div>

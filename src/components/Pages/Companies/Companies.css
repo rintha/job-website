@@ -5,12 +5,67 @@ input {
   border: solid 1px #c0bebe;
 }
 
-companylist {
-    background: #fff;
-    border: solid 1px #c0bebe;
-    text-align: center;
-    padding: 25px;
-    margin: 10px 5px;
-    width: 30%;
-    height: 400px;
+.company-list {
+  background: #fff;
+  border: solid 1px #c0bebe;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 5px;
+  width: 90%;
+  height: 400px;
 }
+.company-list a{
+  text-decoration: none;
+}
+.company-list .cmpny-logo {
+  margin: 8px auto;
+  height: auto;
+}
+.company-list h6 a{
+  font-size: 12px;
+  font-weight: normal;
+  color:#24b24c ;
+}
+.company-list .cmpny-logo img {
+  max-width: 100%;
+  min-height: 175px;
+}
+.company-list h4 a {
+  color: #4b4d4b;
+  height: 50px;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+}
+.company-list a:hover {
+  text-decoration: none;
+}
+.view-details {
+  background: #1f7acf;
+  color: #fff;
+  padding: 7px;
+  margin: 25px 0;
+  display: block;
+  font-weight: normal;
+}
+.view-details:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #115fa9;
+}
+.load-more {
+  width: 100%;
+  text-align: center;
+  margin: 25px auto;
+  clear: both;
+}
+.load-more i {
+  color: #06c;
+}
+.load-more a {
+  color: #06c;
+}
+.load-more a:hover {
+  text-decoration: none;
+}
+

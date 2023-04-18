@@ -7,6 +7,7 @@ import International from "./components/Pages/International Jobs/International";
 import FresherJobs from "./components/Pages/Fresher Jobs/FresherJobs";
 import Companies from "./components/Pages/Companies/Companies";
 import TechnologyPark from "./components/Pages/Technology Park/TechnologyPark";
+import "./index.css"
 
 function App() {
   return (

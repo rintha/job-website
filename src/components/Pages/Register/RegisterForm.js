@@ -3,6 +3,7 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import UploadingFile from "./UploadingFile";
 import Password from "./Password";
 import CountryMob from "./CountryMob";
+import Joblocation from "./Joblocation";
 
 const RegisterForm = () => {
   const [validated, setValidated] = useState(false);
@@ -66,18 +67,7 @@ const RegisterForm = () => {
           <Form.Control required type="number" placeholder="Experience" />
         </Form.Group>
       </Row>
-      <Row className="mb-5">
-        <Form.Group as={Col} lg="6" md="12" controlId="validationCustom03">
-          <Form.Control type="text" placeholder="Key Skill" required />
-        </Form.Group>
-        <Form.Group as={Col} lg="6" md="12" controlId="validationCustom06">
-          <Form.Control
-            required
-            type="text"
-            placeholder="Preferred job location"
-          />
-        </Form.Group>
-      </Row>
+      <Joblocation/>
       <UploadingFile />
       <Form.Group className="mb-5 justify-content-center">
         <Form.Check

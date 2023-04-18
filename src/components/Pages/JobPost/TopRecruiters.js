@@ -30,18 +30,18 @@ const TopRecruiters = () => {
             </div>
 
             <div className="rec-card-container">
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
-              <RecCard />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/TxNC3B8G2HWMVKy6eAu7JPtD9UEbzm.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/7mFGxhRadMw4UeT6kXWc8ZBSur2bLA.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/P49LQhYzEMrZaVtARd2eSB3xTKycuN.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/jd6uPSN5wDcJzHrFRaBy2XkTGQbVmp.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/uExvtyzfwpYc37ZV8BQbHD5mRJ9Cj2.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/27ayNwz8U49jtsGRPpZM5FuAkcXBhr.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/KtS9VJPaBMvpzWLUhCw54QAmrG8Hkx.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/M5HrECusLNBWVfxZhvAGS2DwtFeTPp.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/aCzjUV7mSEshMGfQ3BNJYpT9deWRxk.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/63wGkEsTYzKxDVAjRcBZafLW2Nmryb.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/PwFAHhZ8zeaduc6jJ93CMtWUkSR27r.jpg" />
+              <RecCard src="https://employer.technoparkjobs.com/getfile/companyLogo/cfXPkubQFDW8YdMLNAKews6R4GZaTS.jpg" />
             </div>
           </div>
           <div className="sub-div sub-div-2">
